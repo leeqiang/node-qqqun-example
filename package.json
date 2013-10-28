@@ -1,5 +1,5 @@
 {
-  "name": "node-qqqun",
+  "name": "node-qqqun-example",
   "version": "0.0.1",
   "author": {
     "name": "Lee",
@@ -7,11 +7,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/leeqiang/node-qqqun.git"
+    "url": "git@github.com/leeqiang/node-qqqun-example.git"
   },
   "dependencies": {
     "express": "3.x",
-    "openapiv3": "~0.1.5",
+    "qun": "~0.1.5",
     "underscore": "~1.5.1"
   }
 }

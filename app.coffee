@@ -5,11 +5,11 @@ Module dependencies.
 express = require('express')
 http = require('http')
 
-APIV3 = require('openapiv3')
+QunAPI = require('qun')
 config = require('./config')
 
 # new APIV3(app_id, app_key, api_server)
-QQAPI = new APIV3(config.appId, config.appKey, config.serverIp)
+Qun = new QunAPI(config.appId, config.appKey, config.serverIp)
 
 
 app = express()
@@ -23,6 +23,6 @@ app.configure(->
   app.set('errorPage', process.env.ERROR_PAGE or config.errorPage)
 )
 
-require('./route')(app, QQAPI)
+require('./route')(app, Qun)
 server.listen(app.get('port'))
 console.log("Server listening on port ", app.get('port'))

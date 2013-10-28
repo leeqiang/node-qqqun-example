@@ -1,5 +1,5 @@
-node-qqqun
-==========
+node-qqqun-example
+==================
 
 提供抓取QQ群数据接口
 
